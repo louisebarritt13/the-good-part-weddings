@@ -128,77 +128,21 @@ nav.scrolled .nav-logo { color: var(--black); }
 .gallery-track:hover { animation-play-state: paused; }
 .gallery-track img { height: 340px; width: 453px; object-fit: cover; object-position: center; display: block; flex-shrink: 0; }
 
-/* ── PLANNING EXPERIENCE — full-width statement section ── */
-.planning {
-  background: var(--white);
-  padding: 100px 80px;
-  position: relative;
-  overflow: hidden;
-}
-/* large decorative numeral behind each step */
-.planning-intro {
-  text-align: center;
-  max-width: 640px;
-  margin: 0 auto 72px;
-}
-.planning-intro h2 {
-  font-family: var(--serif);
-  font-size: clamp(2.2rem, 4vw, 3.6rem);
-  font-weight: 400; line-height: 1.1; margin-bottom: 16px;
-}
+/* ── PLANNING EXPERIENCE ── */
+.planning { background: var(--white); padding: 100px 80px; position: relative; overflow: hidden; }
+.planning-intro { text-align: center; max-width: 640px; margin: 0 auto 72px; }
+.planning-intro h2 { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.6rem); font-weight: 400; line-height: 1.1; margin-bottom: 16px; }
 .planning-intro h2 em { font-style: italic; }
-.planning-intro p {
-  font-size: 0.88rem; line-height: 1.9; color: #555;
-}
-/* stepped process row */
-.steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  max-width: 1100px;
-  margin: 0 auto;
-  position: relative;
-}
-/* connecting line between steps */
-.steps::before {
-  content: '';
-  position: absolute;
-  top: 28px;
-  left: calc(12.5% + 8px);
-  right: calc(12.5% + 8px);
-  height: 1px;
-  background: var(--sage-dk, #c8c7ae);
-  z-index: 0;
-}
-.step {
-  display: flex; flex-direction: column; align-items: center;
-  text-align: center; padding: 0 24px; position: relative; z-index: 1;
-}
-.step-num {
-  width: 56px; height: 56px; border-radius: 50%;
-  background: var(--sage); border: 2px solid var(--green);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--serif); font-size: 1.15rem; font-style: italic;
-  color: var(--green); margin-bottom: 24px; flex-shrink: 0;
-  transition: background 0.3s, color 0.3s;
-}
+.planning-intro p { font-size: 0.88rem; line-height: 1.9; color: #555; }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; max-width: 1100px; margin: 0 auto; position: relative; }
+.steps::before { content: ''; position: absolute; top: 28px; left: calc(12.5% + 8px); right: calc(12.5% + 8px); height: 1px; background: #c8c7ae; z-index: 0; }
+.step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 24px; position: relative; z-index: 1; }
+.step-num { width: 56px; height: 56px; border-radius: 50%; background: var(--sage); border: 2px solid var(--green); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1.15rem; font-style: italic; color: var(--green); margin-bottom: 24px; flex-shrink: 0; transition: background 0.3s, color 0.3s; }
 .step:hover .step-num { background: var(--green); color: #fff; }
-.step h3 {
-  font-family: var(--serif); font-size: 1.15rem; font-weight: 400;
-  margin-bottom: 10px; line-height: 1.2;
-}
+.step h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; margin-bottom: 10px; line-height: 1.2; }
 .step p { font-size: 0.8rem; line-height: 1.85; color: #555; }
-
-/* bottom CTA strip */
-.planning-cta {
-  text-align: center;
-  margin-top: 68px;
-}
-.planning-cta p {
-  font-family: var(--serif); font-style: italic;
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
-  color: var(--green); margin-bottom: 28px; line-height: 1.4;
-}
+.planning-cta { text-align: center; margin-top: 68px; }
+.planning-cta p { font-family: var(--serif); font-style: italic; font-size: clamp(1.2rem, 2vw, 1.6rem); color: var(--green); margin-bottom: 28px; line-height: 1.4; }
 
 /* ── CONTACT ── */
 .contact { background: var(--black); color: #fff; padding: 96px 80px; display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
@@ -229,10 +173,7 @@ nav.scrolled .nav-logo { color: var(--black); }
 .submit-btn:hover { background: var(--sage); border-color: var(--sage); color: var(--black); }
 
 /* ── FOOTER ── */
-footer {
-  background: var(--black); border-top: 1px solid rgba(255,255,255,0.07);
-  padding: 40px 80px; display: flex; justify-content: space-between; align-items: center;
-}
+footer { background: var(--black); border-top: 1px solid rgba(255,255,255,0.07); padding: 40px 80px; display: flex; justify-content: space-between; align-items: center; }
 .footer-logo svg { height: 120px; width: auto; display: block; }
 footer p { font-size: 0.68rem; color: rgba(255,255,255,0.28); letter-spacing: 0.06em; }
 
@@ -369,14 +310,13 @@ footer p { font-size: 0.68rem; color: rgba(255,255,255,0.28); letter-spacing: 0.
   </div>
 </section>
 
-<!-- PLANNING EXPERIENCE — numbered steps -->
+<!-- PLANNING EXPERIENCE -->
 <section class="planning">
   <div class="planning-intro reveal">
     <p class="section-label" style="justify-content:center; display:flex;">The Process</p>
     <h2 style="margin-top:12px;">The <em>Planning</em> Experience</h2>
     <p style="margin-top:16px;">Calm, thoughtful planning for weddings that feel like you. From your first message to the moment you say I do, here is how we work together.</p>
   </div>
-
   <div class="steps">
     <div class="step reveal d1">
       <div class="step-num">1</div>
@@ -399,7 +339,6 @@ footer p { font-size: 0.68rem; color: rgba(255,255,255,0.28); letter-spacing: 0.
       <p>On the day, everything runs as it should. You arrive, you breathe, you enjoy every moment — exactly as it was always meant to be.</p>
     </div>
   </div>
-
   <div class="planning-cta reveal">
     <p>Ready to enjoy the planning as much as the day itself?</p>
     <a href="#contact" class="btn btn-sage">Start Planning</a>
@@ -414,13 +353,14 @@ footer p { font-size: 0.68rem; color: rgba(255,255,255,0.28); letter-spacing: 0.
     <p class="reveal d2">Whether it is a question, a kind word, or a collaboration idea, I would love to hear from you. No pressure, no hard sell. Just a conversation about your wedding.</p>
   </div>
   <div class="reveal d1">
-    <div class="form">
-      <div class="fg"><label>Name</label><input type="text" placeholder="Your name"></div>
-      <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"></div>
-      <div class="fg"><label>Wedding Date (if known)</label><input type="text" placeholder="Month / Year"></div>
+    <form class="form" action="https://formspree.io/f/xdajzkaz" method="POST">
+      <input type="hidden" name="_next" value="https://www.thegoodpartweddings.co.uk">
+      <div class="fg"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name" required></div>
+      <div class="fg"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="your@email.com" required></div>
+      <div class="fg"><label for="date">Wedding Date (if known)</label><input type="text" id="date" name="date" placeholder="Month / Year"></div>
       <div class="fg">
-        <label>Size of Wedding</label>
-        <select>
+        <label for="size">Size of Wedding</label>
+        <select id="size" name="size">
           <option value="" disabled selected>Select an option</option>
           <option>Micro wedding (under 30 guests)</option>
           <option>Small (30 to 60 guests)</option>
@@ -429,9 +369,9 @@ footer p { font-size: 0.68rem; color: rgba(255,255,255,0.28); letter-spacing: 0.
           <option>Not sure yet</option>
         </select>
       </div>
-      <div class="fg full"><label>Your Message</label><textarea placeholder="Tell me a little about your wedding..."></textarea></div>
-      <div class="form-submit"><button class="submit-btn">Send message &rarr;</button></div>
-    </div>
+      <div class="fg full"><label for="message">Your Message</label><textarea id="message" name="message" placeholder="Tell me a little about your wedding..."></textarea></div>
+      <div class="form-submit"><button type="submit" class="submit-btn">Send message &rarr;</button></div>
+    </form>
   </div>
 </section>
 
