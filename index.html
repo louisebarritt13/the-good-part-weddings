@@ -146,6 +146,17 @@ nav.scrolled .nav-logo { color: var(--black); }
 .planning-cta { text-align: center; margin-top: 68px; }
 .planning-cta p { font-family: var(--serif); font-style: italic; font-size: clamp(1.2rem, 2vw, 1.6rem); color: var(--green); margin-bottom: 28px; line-height: 1.4; }
 
+/* ── TESTIMONIALS ── */
+.testimonials { background: var(--black); padding: 96px 40px; }
+.testimonials-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+.testimonials-heading { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 400; font-style: italic; color: #fff; margin: 12px 0 56px; }
+.testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.testimonial-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(217,216,195,0.2); padding: 40px 36px; text-align: left; }
+.testimonial-card .stars { color: #c9a84c; font-size: 1rem; letter-spacing: 0.1em; margin-bottom: 20px; }
+.testimonial-card blockquote { font-family: var(--serif); font-style: italic; font-size: 1rem; line-height: 1.85; color: rgba(255,255,255,0.82); margin: 0 0 24px; }
+.testimonial-card cite { font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage); font-style: normal; }
+@media (max-width: 760px) { .testimonials-grid { grid-template-columns: 1fr; } .testimonials { padding: 72px 24px; } }
+
 /* ── CONTACT ── */
 .contact { background: var(--black); color: #fff; padding: 96px 80px; display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
 .contact-left .section-label { color: var(--sage); }
@@ -345,6 +356,26 @@ footer p { font-size: 0.68rem; color: rgba(255,255,255,0.28); letter-spacing: 0.
   <div class="planning-cta reveal">
     <p>Ready to enjoy the planning as much as the day itself?</p>
     <a href="#contact" class="btn btn-sage">Start Planning</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <p class="section-label reveal" style="color:var(--sage);">Kind Words</p>
+    <h2 class="testimonials-heading reveal">What couples say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Hiring Louise was the best choice we made for our wedding! She was so professional, organised and friendly throughout the whole process. She handled everything on the day perfectly and made the whole day run seamlessly. She had thought of everything and kept everyone calm and on time. I would highly recommend Louise to anyone looking for a wedding planner."</blockquote>
+        <cite>Sophie Brand</cite>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I hired Louise to help firm up some very loose wedding plans and she was absolutely brilliant. She helped me think through all the details I hadn't considered and gave me the confidence that everything was in hand. On the day itself she was calm, efficient and completely invisible when she needed to be. I honestly couldn't have done it without her."</blockquote>
+        <cite>Leanne W</cite>
+      </div>
+    </div>
   </div>
 </section>
 
