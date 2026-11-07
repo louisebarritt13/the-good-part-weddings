@@ -1,0 +1,224 @@
+<title>The Journal | The Good Part Weddings</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Honest advice on planning an intimate, meaningful wedding. Articles on registry office weddings, destination weddings in Greece, small wedding planning, costs and coordination.">
+<link rel="canonical" href="https://www.thegoodpartweddings.co.uk/journal/">
+<meta property="og:title" content="The Journal | The Good Part Weddings">
+<meta property="og:description" content="Honest planning advice for intimate, meaningful weddings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--sage:#d9d8c3;--green:#44604f;--black:#000;--white:#fff;--serif:Palatino,'Palatino Linotype','Book Antiqua',Georgia,serif;--sans:'Raleway',sans-serif;--text:#1a1a18;--muted:rgba(26,26,24,0.58);--border:rgba(68,96,79,0.14)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--black:#f0ede6;--white:#111110;--text:#f0ede6;--muted:rgba(240,237,230,0.55);--border:rgba(217,216,195,0.14);color-scheme:dark}}
+:root[data-theme="dark"]{--black:#f0ede6;--white:#111110;--text:#f0ede6;--muted:rgba(240,237,230,0.55);--border:rgba(217,216,195,0.14);color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--text);font-family:var(--sans);font-weight:400;overflow-x:hidden;line-height:1.65}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:22px 60px;transition:background .4s,padding .4s;background:rgba(217,216,195,0.97)}
+nav.scrolled{backdrop-filter:blur(6px);padding:14px 60px}
+.nav-logo{font-family:var(--serif);font-size:1.05rem;font-style:italic;color:var(--black);letter-spacing:.04em}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);transition:color .3s;font-weight:500}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--green)}
+.nav-cta{background:var(--green)!important;color:#fff!important;padding:8px 18px!important}
+.nav-cta:hover{background:#355540!important}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px}
+.nav-toggle span{display:block;height:1px;background:var(--black)}
+.nav-toggle span:nth-child(1){width:24px}.nav-toggle span:nth-child(2){width:16px}.nav-toggle span:nth-child(3){width:20px}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(217,216,195,.98);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--serif);font-size:2rem;font-style:italic;color:var(--black)}
+.mobile-close{position:absolute;top:24px;right:28px;background:none;border:none;cursor:pointer;font-size:1.4rem;color:var(--black)}
+/* Hero */
+.journal-hero{position:relative;overflow:hidden;text-align:center;min-height:520px;display:flex;align-items:center;justify-content:center}
+.journal-hero-bg{position:absolute;inset:0;z-index:0}
+.journal-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.journal-hero-bg::after{content:'';position:absolute;inset:0;background:rgba(217,216,195,0.72)}
+.journal-hero-content{position:relative;z-index:1;padding:140px max(60px,env(safe-area-inset-left,0px)) 80px}
+.journal-hero p.eyebrow{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:20px}
+.journal-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,6vw,5rem);font-style:italic;font-weight:300;color:var(--black);line-height:1.05;text-wrap:balance;margin-bottom:16px}
+.journal-hero .sub{font-size:.88rem;color:var(--muted);max-width:440px;margin:0 auto}
+/* Filter bar */
+.filter-bar{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid var(--border);padding:0 max(60px,env(safe-area-inset-left,0px));display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.filter-bar::-webkit-scrollbar{display:none}
+.filter-btn{flex-shrink:0;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--muted);background:none;border:none;cursor:pointer;padding:16px 20px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.filter-btn:hover{color:var(--green)}
+.filter-btn.active{color:var(--green);border-bottom-color:var(--green)}
+/* Featured */
+.featured{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid var(--border);max-height:520px;overflow:hidden}
+.featured-img{background:var(--sage);min-height:360px;position:relative;overflow:hidden}
+.featured-img img{width:100%;height:100%;object-fit:cover;opacity:.7}
+.featured-body{padding:60px 56px;display:flex;flex-direction:column;justify-content:center;background:var(--black);color:var(--white)}
+.feat-cat{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:16px}
+.feat-title{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.6rem);font-style:italic;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:16px;text-wrap:balance}
+.feat-desc{font-size:.88rem;color:rgba(217,216,195,.65);line-height:1.75;margin-bottom:28px;flex:1}
+.feat-link{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600;display:inline-flex;align-items:center;gap:8px}
+.feat-link::after{content:'→';font-style:normal}
+/* Grid */
+.grid-section{padding:72px max(60px,env(safe-area-inset-left,0px))}
+.grid-section h2{font-family:var(--serif);font-size:clamp(1.4rem,2.5vw,2rem);font-style:italic;font-weight:300;color:var(--text);margin-bottom:40px}
+.article-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:40px 32px}
+.article-card{display:flex;flex-direction:column;cursor:pointer;transition:opacity .2s}
+.article-card:hover{opacity:.85}
+.card-img{aspect-ratio:4/3;background:var(--sage);margin-bottom:20px;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-cat{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:10px}
+.card-title{font-family:var(--serif);font-size:1.3rem;font-style:italic;color:var(--text);line-height:1.2;margin-bottom:10px;text-wrap:balance;flex:1}
+.card-desc{font-size:.82rem;color:var(--muted);line-height:1.75;margin-bottom:14px}
+.card-link{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600}
+/* CTA */
+.journal-cta{background:var(--green);padding:80px max(60px,env(safe-area-inset-left,0px));text-align:center}
+.journal-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-style:italic;color:#fff;margin-bottom:12px}
+.journal-cta p{font-size:.88rem;color:rgba(255,255,255,.65);max-width:380px;margin:0 auto 28px}
+.cta-btn{display:inline-block;padding:14px 40px;background:#fff;color:var(--green);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;transition:background .25s}
+.cta-btn:hover{background:var(--sage)}
+footer{background:var(--black);border-top:1px solid rgba(255,255,255,.07);padding:40px max(60px,env(safe-area-inset-left,0px));display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+footer p{font-size:.68rem;color:rgba(217,216,195,.4);letter-spacing:.06em}
+.foot-links{display:flex;gap:24px}
+.foot-links a{font-size:.68rem;color:rgba(217,216,195,.4);letter-spacing:.06em;transition:color .2s}
+.foot-links a:hover{color:rgba(217,216,195,.85)}
+@media(max-width:900px){.featured{grid-template-columns:1fr;max-height:none}.featured-img{min-height:220px}.featured-body{padding:40px 32px}}
+@media(max-width:768px){nav{padding:18px 20px}nav.scrolled{padding:12px 20px}.nav-links{display:none}.nav-toggle{display:flex}.journal-hero{padding:120px 24px 64px}.filter-bar{padding:0 20px}.grid-section{padding:56px 24px}.journal-cta{padding:64px 24px}footer{padding:32px 24px;flex-direction:column;text-align:center}.foot-links{justify-content:center}}
+</style>
+<nav id="nav">
+  <a href="/" class="nav-logo">The Good Part Weddings</a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#how-i-can-help">How I can Help</a></li>
+    <li><a href="/journal/" aria-current="page">The Journal</a></li>
+    <li><a href="/#contact" class="nav-cta">Start Planning</a></li>
+  </ul>
+  <button class="nav-toggle" id="toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" id="mobile-close">x</button>
+  <a href="/#about">About</a>
+  <a href="/#how-i-can-help">How I can Help</a>
+  <a href="/journal/">The Journal</a>
+  <a href="/#contact">Start Planning</a>
+</div>
+
+<section class="journal-hero">
+  <div class="journal-hero-bg"><img src="images/hero-journal-index.jpg" alt="Bride and groom by an infinity pool at dusk, sea and mountains in the background" width="933" height="1400"></div>
+  <div class="journal-hero-content">
+    <p class="eyebrow">The Journal</p>
+    <h1>Honest advice<br>for the wedding<br>you actually want</h1>
+    <p class="sub">Planning guides, cost breakdowns and thinking pieces on intimate and meaningful weddings.</p>
+  </div>
+</section>
+
+<div class="filter-bar" id="filter-bar" role="toolbar" aria-label="Filter articles by category">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="intimate">Intimate Weddings</button>
+  <button class="filter-btn" data-filter="planning">Planning Advice</button>
+  <button class="filter-btn" data-filter="budget">Budget &amp; Costs</button>
+  <button class="filter-btn" data-filter="destination">Destination</button>
+  <button class="filter-btn" data-filter="london">London &amp; Registry</button>
+  <button class="filter-btn" data-filter="coordination">Day Coordination</button>
+</div>
+
+<div class="featured" data-cats="london planning" id="featured-article">
+  <div class="featured-img"><img src="images/hero-registry-office.jpg" alt="Louise at her wedding, holding a glass of wine in an arched doorway" width="933" height="1400"></div>
+  <div class="featured-body">
+    <p class="feat-cat">London &amp; Registry · Planning Advice</p>
+    <h2 class="feat-title">Planning a London Registry Office Wedding: Everything You Actually Need to Know</h2>
+    <p class="feat-desc">From booking notices to realistic costs and finding a photographer who understands small weddings. The honest guide to a London civil ceremony with guests.</p>
+    <a href="/journal/planning-a-london-registry-office-wedding/" class="feat-link">Read</a>
+  </div>
+</div>
+
+<section class="grid-section">
+  <div class="article-grid" id="article-grid">
+
+    <a href="/journal/does-an-intimate-wedding-suit-you/" class="article-card" data-cats="intimate">
+      <div class="card-img"><img src="images/hero-does-it-suit-you.jpg" alt="Groom smiling at bride, black and white" width="933" height="700"></div>
+      <p class="card-cat">Intimate Weddings</p>
+      <h3 class="card-title">Does an Intimate Wedding Actually Suit You?</h3>
+      <p class="card-desc">The honest questions to ask before you decide. Not just about budget or logistics, but about what you and your partner actually want.</p>
+      <span class="card-link">Read</span>
+    </a>
+
+    <a href="/journal/how-to-plan-an-intimate-wedding/" class="article-card" data-cats="intimate planning">
+      <div class="card-img"><img src="images/hero-how-to-plan.jpg" alt="Wedding dinner by infinity pool, bougainvillea in foreground" width="1400" height="933"></div>
+      <p class="card-cat">Intimate Weddings · Planning Advice</p>
+      <h3 class="card-title">How to Plan an Intimate Wedding: A Step-by-Step Guide</h3>
+      <p class="card-desc">Guest list, venue, suppliers, and the shape of the day. A practical sequence for couples planning a genuinely small UK wedding.</p>
+      <span class="card-link">Read</span>
+    </a>
+
+    <a href="/journal/how-much-does-an-intimate-wedding-cost/" class="article-card" data-cats="budget planning">
+      <div class="card-img"><img src="images/hero-intimate-cost.jpg" alt="Long wedding table beside infinity pool with sea view" width="1400" height="933"></div>
+      <p class="card-cat">Budget &amp; Costs</p>
+      <h3 class="card-title">How Much Does an Intimate Wedding Actually Cost?</h3>
+      <p class="card-desc">Real cost breakdowns for UK intimate weddings in 2026. Where the money goes, where you can save, and what not to skimp on.</p>
+      <span class="card-link">Read</span>
+    </a>
+
+    <a href="/journal/planning-a-destination-wedding-in-greece/" class="article-card" data-cats="destination planning">
+      <div class="card-img"><img src="images/hero-greece-aerial.jpg" alt="Aerial view of a clifftop Greek villa wedding venue" width="933" height="1400"></div>
+      <p class="card-cat">Destination Weddings</p>
+      <h3 class="card-title">Planning a Destination Wedding in Greece: Where to Actually Start</h3>
+      <p class="card-desc">Legal options, island choice, logistics and costs for UK couples planning a wedding in Greece. Practical guidance, not Pinterest inspiration.</p>
+      <span class="card-link">Read</span>
+    </a>
+
+    <a href="/journal/do-you-need-a-wedding-coordinator/" class="article-card" data-cats="coordination planning">
+      <div class="card-img"><img src="images/hero-coordinator.jpg" alt="Bride and groom portrait by infinity pool at dusk" width="933" height="1400"></div>
+      <p class="card-cat">Day Coordination</p>
+      <h3 class="card-title">Do You Really Need an On-the-Day Wedding Coordinator?</h3>
+      <p class="card-desc">An honest look at what on-the-day coordination actually involves, who genuinely benefits and when you can probably manage without.</p>
+      <span class="card-link">Read</span>
+    </a>
+
+  </div>
+</section>
+
+<div class="journal-cta">
+  <h2>Ready to plan the good part?</h2>
+  <p>Get in touch and let's talk about what you need.</p>
+  <a href="/#contact" class="cta-btn">Start planning</a>
+</div>
+
+<footer>
+  <p>2026 The Good Part Weddings. All rights reserved.</p>
+  <nav class="foot-links">
+    <a href="/">Home</a>
+    <a href="/journal/">The Journal</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>40)});
+  var tog=document.getElementById('toggle');
+  var menu=document.getElementById('mobile-menu');
+  var close=document.getElementById('mobile-close');
+  tog.addEventListener('click',function(){menu.classList.add('open')});
+  close.addEventListener('click',function(){menu.classList.remove('open')});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open')})});
+
+  // Category filter
+  var btns=document.querySelectorAll('.filter-btn');
+  var cards=document.querySelectorAll('.article-card');
+  var featured=document.getElementById('featured-article');
+  btns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      btns.forEach(function(b){b.classList.remove('active')});
+      btn.classList.add('active');
+      var f=btn.dataset.filter;
+      // Featured article
+      var fcats=(featured.dataset.cats||'').split(' ');
+      featured.style.display=(f==='all'||fcats.indexOf(f)>-1)?'':'none';
+      // Cards
+      cards.forEach(function(c){
+        var cats=(c.dataset.cats||'').split(' ');
+        c.style.display=(f==='all'||cats.indexOf(f)>-1)?'':'none';
+      });
+    });
+  });
+})();
+</script>
