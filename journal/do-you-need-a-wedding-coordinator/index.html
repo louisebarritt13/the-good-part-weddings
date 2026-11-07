@@ -47,57 +47,51 @@ nav.scrolled{background:rgba(217,216,195,0.97);backdrop-filter:blur(6px);padding
 
 
 
+
+
+
+
 @media(max-width:768px){
-  /* Nav */
   nav{padding:16px 20px}
   nav.scrolled{padding:11px 20px}
-  .nav-links{display:none}
-  .nav-toggle{display:flex}
-  /* Back link clears fixed nav */
-  .back-link{padding:84px 20px 0}
-  /* Article header */
-  .article-header{padding:32px 20px 40px}
-  .art-h1{font-size:clamp(1.7rem,6vw,2.4rem);line-height:1.15}
+  .nav-links{display:none!important}
+  .nav-toggle{display:flex!important}
+  .back-link{padding:84px 20px 0!important}
+  .article-header{padding:32px 20px 40px!important}
+  .art-h1{font-size:clamp(1.7rem,6vw,2.4rem)!important;line-height:1.15}
   .art-cat{font-size:.55rem}
   .art-meta{font-size:.62rem;gap:10px}
-  /* Article body */
-  .article-body{padding:0 20px 56px}
+  .article-body{padding:0 20px 56px!important;max-width:100%!important}
   .article-body p{font-size:.9rem;line-height:1.9}
-  .article-body h2{font-size:clamp(1.3rem,5vw,1.8rem);margin:2em 0 .6em}
+  .article-body h2{font-size:clamp(1.3rem,5vw,1.8rem)!important;margin:2em 0 .6em}
   .article-body h3{font-size:.8rem}
   .article-body li{font-size:.9rem}
-  /* Callout */
-  .callout{padding:24px 20px}
+  .callout{padding:24px 20px!important}
   .callout p{font-size:1rem}
-  /* Cost table — allow horizontal scroll */
   .cost-table{font-size:.8rem}
   .cost-table th{font-size:.55rem;padding:8px 0}
   .cost-table td{padding:10px 0}
-  /* FAQ */
   .faq-q{font-size:.84rem}
   .faq-a{font-size:.84rem}
-  /* Related articles */
-  .related{padding:48px 20px}
+  .related{padding:48px 20px!important}
   .related h2{font-size:1.6rem;margin-bottom:28px}
-  .related-grid{grid-template-columns:1fr;gap:16px}
+  .related-grid{grid-template-columns:1fr!important;gap:16px}
   .related-card{padding:22px 20px 18px}
-  /* Contact section */
   .contact{padding:56px 20px!important;grid-template-columns:1fr!important;gap:36px!important}
   .contact-left h2{font-size:clamp(1.8rem,7vw,2.8rem)}
   .contact-left p{max-width:100%}
   .form{grid-template-columns:1fr!important;gap:20px}
   .fg.full{grid-column:1}
-  /* Footer */
-  footer{padding:28px 20px;flex-direction:column;text-align:center;gap:16px}
+  footer{padding:28px 20px!important;flex-direction:column;text-align:center;gap:16px}
   .foot-links{justify-content:center;flex-wrap:wrap;gap:14px}
   .footer-logo svg{height:32px}
 }
 @media(max-width:480px){
-  .art-h1{font-size:1.6rem}
-  .article-body{padding:0 16px 48px}
-  .article-header{padding:28px 16px 36px}
-  .back-link{padding:80px 16px 0}
-  .related{padding:40px 16px}
+  .art-h1{font-size:1.6rem!important}
+  .article-body{padding:0 16px 48px!important}
+  .article-header{padding:28px 16px 36px!important}
+  .back-link{padding:80px 16px 0!important}
+  .related{padding:40px 16px!important}
   .contact{padding:48px 16px!important}
 }
 
